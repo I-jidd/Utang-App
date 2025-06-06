@@ -10,15 +10,40 @@
         <item name="android:windowBackground">@color/background_light</item>
     </style>
 
+    <!-- Base Styles -->
+    <style name="Badge">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextInputLayout">
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
     <!-- Card Styles -->
-    <style name="CardView.Primary">
+    <style name="CardViewPrimary">
         <item name="cardCornerRadius">12dp</item>
         <item name="cardElevation">4dp</item>
         <item name="cardBackgroundColor">@color/background_white</item>
         <item name="android:layout_margin">8dp</item>
     </style>
 
-    <style name="CardView.Secondary">
+    <style name="CardViewSecondary">
         <item name="cardCornerRadius">8dp</item>
         <item name="cardElevation">2dp</item>
         <item name="cardBackgroundColor">@color/background_white</item>
@@ -26,23 +51,18 @@
     </style>
 
     <!-- Button Styles -->
-    <style name="Button.Primary">
+    <style name="ButtonPrimary" parent="Button">
         <item name="android:background">@drawable/button_primary</item>
         <item name="android:textColor">@color/text_white</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:elevation">2dp</item>
-        <item name="android:stateListAnimator">@null</item>
     </style>
 
-    <style name="Button.Secondary">
+    <style name="ButtonSecondary" parent="Button">
         <item name="android:background">@drawable/button_secondary</item>
         <item name="android:textColor">@color/primary_blue</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="Button.Small">
+    <style name="ButtonSmall" parent="Button">
         <item name="android:textSize">12sp</item>
         <item name="android:minHeight">32dp</item>
         <item name="android:paddingStart">12dp</item>
@@ -50,72 +70,47 @@
     </style>
 
     <!-- Text Styles -->
-    <style name="Text.Heading">
+    <style name="TextHeading" parent="Text">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/text_primary</item>
     </style>
 
-    <style name="Text.Subheading">
+    <style name="TextSubheading" parent="Text">
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/text_primary</item>
     </style>
 
-    <style name="Text.Body">
+    <style name="TextBody" parent="Text">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/text_primary</item>
     </style>
 
-    <style name="Text.Caption">
+    <style name="TextCaption" parent="Text">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/text_secondary</item>
     </style>
 
-    <style name="Text.Amount">
+    <style name="TextAmount" parent="Text">
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">monospace</item>
     </style>
 
     <!-- Input Styles -->
-    <style name="TextInputLayout.Primary">
+    <style name="TextInputLayoutPrimary" parent="TextInputLayout">
         <item name="boxStrokeColor">@color/primary_blue</item>
         <item name="hintTextColor">@color/primary_blue</item>
-        <item name="android:layout_marginBottom">16dp</item>
     </style>
 
     <!-- Status Badge Styles -->
-    <style name="Badge.Overdue">
+    <style name="BadgeOverdue" parent="Badge">
         <item name="android:background">@drawable/status_overdue_bg</item>
-        <item name="android:textColor">@color/text_white</item>
-        <item name="android:textSize">10sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:paddingStart">8dp</item>
-        <item name="android:paddingEnd">8dp</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
     </style>
 
-    <style name="Badge.Pending">
+    <style name="BadgePending" parent="Badge">
         <item name="android:background">@drawable/status_pending_bg</item>
-        <item name="android:textColor">@color/text_white</item>
-        <item name="android:textSize">10sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:paddingStart">8dp</item>
-        <item name="android:paddingEnd">8dp</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
     </style>
 
-    <style name="Badge.Paid">
+    <style name="BadgePaid" parent="Badge">
         <item name="android:background">@drawable/status_paid_bg</item>
-        <item name="android:textColor">@color/text_white</item>
-        <item name="android:textSize">10sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:paddingStart">8dp</item>
-        <item name="android:paddingEnd">8dp</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
     </style>
 </resources>

@@ -21,6 +21,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".DebtDetailsActivity"
+            android:exported="false"
+            android:label="Debt Details"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.Utang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:label="Record Payment"
+            android:parentActivityName=".DebtDetailsActivity"
+            android:theme="@style/Theme.Utang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DebtDetailsActivity" />
+        </activity>
     </application>
 
 </manifest>
