@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item_background"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/et_item_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/edittext_background"
+            android:hint="Item name"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_quantity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="Qty"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="numberDecimal"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="Price"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="numberDecimal" />
+
+        <ImageButton
+            android:id="@+id/btn_remove_item"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Remove item"
+            app:tint="#E74C3C" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Unit:"
+            android:textSize="12sp"
+            android:textColor="#7F8C8D" />
+
+        <Spinner
+            android:id="@+id/spinner_unit"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/spinner_small_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:textSize="12sp"
+            android:textColor="#7F8C8D"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/tv_item_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱0.00"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#27AE60"
+            tools:text="₱150.00" />
+
+    </LinearLayout>
+
+</LinearLayout>

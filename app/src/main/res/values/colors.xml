@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors -->
+    <color name="primary_blue">#3498DB</color>
+    <color name="primary_dark_blue">#2980B9</color>
+    <color name="accent_green">#27AE60</color>
+
+    <!-- Status Colors -->
+    <color name="status_overdue">#E74C3C</color>
+    <color name="status_pending">#F39C12</color>
+    <color name="status_paid">#27AE60</color>
+    <color name="status_draft">#95A5A6</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_tertiary">#95A5A6</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_card">#FAFAFA</color>
+    <color name="background_input">#F8F9FA</color>
+
+    <!-- Border Colors -->
+    <color name="border_light">#E9ECEF</color>
+    <color name="border_medium">#BDC3C7</color>
+    <color name="border_dark">#95A5A6</color>
 </resources>

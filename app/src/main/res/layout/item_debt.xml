@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <!-- Status Indicator -->
+            <View
+                android:id="@+id/view_status_indicator"
+                android:layout_width="4dp"
+                android:layout_height="40dp"
+                android:background="#E74C3C"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juan Dela Cruz"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#2C3E50"
+                    tools:text="Juan Dela Cruz" />
+
+                <TextView
+                    android:id="@+id/tv_debt_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Groceries and household items"
+                    android:textSize="12sp"
+                    android:textColor="#7F8C8D"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    tools:text="Groceries and household items" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱2,500.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#E74C3C"
+                tools:text="₱2,500.00" />
+
+        </LinearLayout>
+
+        <!-- Details Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tv_due_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Due: Dec 15, 2024"
+                android:textSize="12sp"
+                android:textColor="#7F8C8D"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="4dp"
+                tools:text="Due: Dec 15, 2024" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVERDUE"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/status_overdue_bg"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:text="OVERDUE" />
+
+        </LinearLayout>
+
+        <!-- Items Preview (if any) -->
+        <TextView
+            android:id="@+id/tv_items_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rice (5kg), Oil (1L), Sugar (2kg) +3 more"
+            android:textSize="11sp"
+            android:textColor="#95A5A6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            tools:text="Rice (5kg), Oil (1L), Sugar (2kg) +3 more"
+            tools:visibility="visible" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_view_details"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Details"
+                android:textSize="12sp"
+                android:textColor="#3498DB"
+                android:background="@drawable/button_small_outline"
+                android:layout_marginEnd="8dp"
+                android:minWidth="0dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btn_mark_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Mark Paid"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_small_primary"
+                android:minWidth="0dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,3 +1,85 @@
 <resources>
-    <string name="app_name">Utang</string>
+    <string name="app_name">Utang App</string>
+
+    <!-- Main Screen -->
+    <string name="total_overdue">Total Overdue</string>
+    <string name="total_pending">Total Pending</string>
+    <string name="recent_debts">Recent Debts</string>
+    <string name="add_new_utang">Add New Utang</string>
+    <string name="quick_payment">Quick Payment</string>
+
+    <!-- Search and Filter -->
+    <string name="search_hint">Search by customer or item name...</string>
+    <string name="filter_all">All</string>
+    <string name="filter_overdue">Overdue</string>
+    <string name="filter_pending">Pending</string>
+    <string name="filter_paid">Paid</string>
+
+    <!-- Add Utang Form -->
+    <string name="customer_name_hint">Customer Name</string>
+    <string name="amount_hint">Amount (₱)</string>
+    <string name="description_hint">Description</string>
+    <string name="due_date_label">Due Date:</string>
+    <string name="select_date">Select Date</string>
+    <string name="items_optional">Items (Optional)</string>
+    <string name="add_item">+ Add Item</string>
+    <string name="save_utang">Save Utang</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Item Form -->
+    <string name="item_name_hint">Item name</string>
+    <string name="quantity_hint">Qty</string>
+    <string name="price_hint">Price</string>
+    <string name="unit_label">Unit:</string>
+    <string name="total_label">Total:</string>
+
+    <!-- Debt Item -->
+    <string name="due_prefix">Due:</string>
+    <string name="view_details">Details</string>
+    <string name="mark_paid">Mark Paid</string>
+
+    <!-- Status Labels -->
+    <string name="status_overdue">OVERDUE</string>
+    <string name="status_pending">PENDING</string>
+    <string name="status_paid">PAID</string>
+    <string name="status_partial">PARTIAL</string>
+
+    <!-- Units -->
+    <string-array name="units">
+        <item>pcs</item>
+        <item>kg</item>
+        <item>g</item>
+        <item>L</item>
+        <item>mL</item>
+        <item>pack</item>
+        <item>box</item>
+        <item>bottle</item>
+        <item>can</item>
+        <item>bag</item>
+    </string-array>
+
+    <!-- Sort Options -->
+    <string-array name="sort_options">
+        <item>Date Added</item>
+        <item>Due Date</item>
+        <item>Amount</item>
+        <item>Customer Name</item>
+        <item>Status</item>
+    </string-array>
+
+    <!-- Messages -->
+    <string name="debt_saved_successfully">Debt saved successfully!</string>
+    <string name="payment_recorded">Payment recorded successfully!</string>
+    <string name="error_empty_fields">Please fill in all required fields</string>
+    <string name="error_invalid_amount">Please enter a valid amount</string>
+    <string name="confirm_delete">Are you sure you want to delete this debt?</string>
+
+    <!-- Content Descriptions -->
+    <string name="menu_description">Menu</string>
+    <string name="filter_description">Filter</string>
+    <string name="remove_item_description">Remove item</string>
+
+    <!-- Currency -->
+    <string name="currency_symbol">₱</string>
+    <string name="amount_format">₱%.2f</string>
 </resources>
